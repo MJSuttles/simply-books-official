@@ -1,43 +1,44 @@
-// /* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/exhaustive-deps */
 
-// 'use client';
+'use client';
 
-// import React, { useEffect, useState } from 'react';
-// import Link from 'next/link';
-// import { Button } from 'react-bootstrap';
-// import { getAuthors } from '../../api/authorData';
-// import { useAuth } from '../../utils/context/authContext';
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { Button } from 'react-bootstrap';
+import { getAuthors } from '../../api/authorData';
+import { useAuth } from '../../utils/context/authContext';
+import AuthorCard from '../../components/AuthorCard';
 
-// function Home() {
-//   // TODO: Set a state for books
-//   const [books, setAuthors] = useState([]);
+function AuthorsPage() {
+  // TODO: Set a state for authors
+  const [authors, setAuthors] = useState([]);
 
-//   // TODO: Get user ID using useAuth Hook
-//   const { user } = useAuth();
+  // TODO: Get user ID using useAuth Hook
+  const { user } = useAuth();
 
-//   // TODO: create a function that makes the API call to get all the books
-//   const getAllTheAuthors = () => {
-//     getAuthors(user.uid).then(setAuthors);
-//   };
+  // TODO: create a function that makes the API call to get all the authors
+  const getAllTheAuthors = () => {
+    getAuthors(user.uid).then(setAuthors);
+  };
 
-//   // TODO: make the call to the API to get all the books on component render
-//   useEffect(() => {
-//     getAllTheAuthors();
-//   }, []);
+  // TODO: make the call to the API to get all the authors on component render
+  useEffect(() => {
+    getAllTheAuthors();
+  }, []);
 
-//   return (
-//     <div className="text-center my-4">
-//       <Link href="/book/new" passHref>
-//         <Button>Add An Author</Button>
-//       </Link>
-//       <div className="d-flex flex-wrap">
-//         {/* TODO: map over books here using BookCard component */}
-//         {books.map((book) => (
-//           <AuthorCard key={book.firebaseKey} bookObj={book} onUpdate={getAllTheAuthors} />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
+  return (
+    <div className="text-center my-4">
+      <Link href="/book/new" passHref>
+        <Button>Add An Author</Button>
+      </Link>
+      <div className="d-flex flex-wrap">
+        {/* TODO: map over authors here using AuthCard component */}
+        {authors.map((author) => (
+          <AuthorCard key={author.firebaseKey} authorObject={author} onUpdate={getAllTheAuthors} />
+        ))}
+      </div>
+    </div>
+  );
+}
 
-// export default Home;
+export default AuthorsPage;
