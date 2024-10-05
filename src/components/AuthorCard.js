@@ -20,7 +20,7 @@ function AuthorCard({ authorObject, onUpdate }) {
     <Card style={{ width: '18rem', margin: '10px' }}>
       <Card.Body>
         <Card.Title>
-          {authorObject.first_name} ${authorObject.last_name}
+          {authorObject.first_name} {authorObject.last_name}
         </Card.Title>
         <p className="card-text bold">
           {authorObject.favorite && (
@@ -29,7 +29,7 @@ function AuthorCard({ authorObject, onUpdate }) {
               <br />
             </span>
           )}{' '}
-          ${authorObject.email}
+          {authorObject.email}
         </p>
         {/* DYNAMIC LINK TO VIEW THE AUTHOR DETAILS  */}
         <Link href={`/authors/${authorObject.firebaseKey}`} passHref>

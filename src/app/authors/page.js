@@ -5,9 +5,9 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Button } from 'react-bootstrap';
-import { getAuthors } from '../../api/authorData';
-import { useAuth } from '../../utils/context/authContext';
-import AuthorCard from '../../components/AuthorCard';
+import { useAuth } from '@/utils/context/authContext';
+import { getAuthors } from '@/api/authorData';
+import AuthorCard from '@/components/AuthorCard';
 
 function AuthorsPage() {
   // TODO: Set a state for authors
@@ -28,7 +28,7 @@ function AuthorsPage() {
 
   return (
     <div className="text-center my-4">
-      <Link href="/book/new" passHref>
+      <Link href="/authors/new" passHref>
         <Button>Add An Author</Button>
       </Link>
       <div className="d-flex flex-wrap">
