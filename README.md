@@ -1,17 +1,40 @@
 # Welcome to Simply Books!
 
+Name of the Project: simply-books-official
+
+Overview of the project: This website will allow a users, after logging-in via Google Authentication, to simulate an Amazon-like browsing experience. The first time they login, they will see a blank screen, but they will be click the "Authors" tab. They won't see any cards at first, but they can click on "Add an Author" to create a record for an author by filling-out and submitting details in a form asking of the author's first name, last name, and e-mail address. They can even mark the author as a favorite. They will then see the author's card on screen. They can next click on the "Books" tab and will be shown a blank screen on their first login. They can click on the "Add a Book" button and then fill-out and submit a form containing a book's title, a link to a book image, the book price, select the author from a dropdown list, and write a brief description of the book. They will then see the book listed onscreen. On each book's card, they can click on "View" to view the book details, "Edit" to change details, or "Delete" to delete the card. They will also be able to perform the same options on each author's card.
+
+Link to your wireframes/prototype: ![alt text](image-1.png)
+
+Link/screenshot of data flowchart: N/A
+
+Link to the deployed project (will learn later): https://rolltiderolldad-simply-books.netlify.app/
+
+Link to your project board (yes...even though it is a part of the repo): I didn't use projects, but I created issues and milestones: (https://github.com/users/MJSuttles/projects/3/views/1)
+
+Description of the user and the problem you are solving for them: The user is anyone who'd like to add an online database of technical vocabulary cards.
+
+Screenshots of your project: N/A
+
+List of contributors and links to their GH profiles: N/A
+
+Link to Loom video walkthrough of your app (no more than 1 minute long! Make it great): https://www.loom.com/share/0af5635b71d84ec38709006aff10763a
+
 This project will be completed in a 1 week sprint of 6 days or less. If you need support, put in a ticket ASAP and a senior engineer or teammate will help you.
 
 ## Get Started
+
 - [FRONT END: Definition of Done](#fe-definition-of-done)
 - [BACK END: Definition of Done](#be-definition-of-done)
 - [MVP Guidelines](#mvp-guidelines)
 - [Guide to getting started with this project](#guide-to-getting-started)
 
 ### FE Definition of Done
+
 A feature or task is considered "done" when:
+
 1. All tasks, features, and fixes must be ticketed and included on the GitHub project board.
-Make sure the project board uses columns like Backlog, In Progress, Testing, and Done to track work.
+   Make sure the project board uses columns like Backlog, In Progress, Testing, and Done to track work.
 1. The code is fully implemented and meets the requirements defined in the task.
 1. The feature passes all AC especially for CRUD functionality.
 1. The user can successfully perform Create, Read, Update, and Delete operations for both books and authors.
@@ -24,9 +47,11 @@ Make sure the project board uses columns like Backlog, In Progress, Testing, and
 1. The project board must reflect all tasks, bugs, and updates, with each task being moved through the proper columns (Backlog, In Progress, Testing, Done).
 
 ### BE Definition of Done
+
 A feature or task is considered "done" when:
+
 1. All tasks, features, and fixes must be ticketed and included on the GitHub project board.
-Make sure the project board uses columns like Backlog, In Progress, Testing, and Done to track work.
+   Make sure the project board uses columns like Backlog, In Progress, Testing, and Done to track work.
 1. The code is fully implemented and meets the requirements defined in the task.
 1. The feature passes all AC especially for CRUD functionality.
 1. The user can successfully perform Create, Read, Update, and Delete operations for both books and authors using postman.
@@ -37,20 +62,19 @@ Make sure the project board uses columns like Backlog, In Progress, Testing, and
 1. Any issues or bugs identified during development or testing must be fixed by the developer. All work related to fixes must be ticketed and included on the GitHub project board.
 1. The project board must reflect all tasks, bugs, and updates, with each task being moved through the proper columns (Backlog, In Progress, Testing, Done).
 
-
-
 ### MVP Guidelines
+
 The Minimum Viable Product (MVP) for the Simply Books project includes:
+
 1. **CRUD Functionality for Books and Authors**:
    - Users must be able to create, read, update, and delete books and authors.
    - When viewing an author, all books associated with that author must be visible.
    - When deleting an author, all of their books are also deleted.
-   
 2. **Author-Book Relationship**:
    - Each book must be associated with an author.
    - When a user views a book, the associated author's details must be accessible.
-   
 3. **Firebase Integration**:
+
    - The app must use Firebase for authentication and real-time data management.
    - Books and authors are tied to the logged-in user.
 
@@ -58,19 +82,21 @@ The Minimum Viable Product (MVP) for the Simply Books project includes:
    - Each user should only see their own books and authors.
 
 #### Stretch Goals:
+
 - **Public/Private Books**:
-   - Users can mark books as public or private.
-   - Public books are viewable by all users without needing to log in.
-   - Private books are only visible to the user who created them.
-   
+  - Users can mark books as public or private.
+  - Public books are viewable by all users without needing to log in.
+  - Private books are only visible to the user who created them.
 - **Simulated Book Purchases**:
-   - Users can add books to a cart and simulate purchasing them.
-   - No real transaction will occur, but the UI will allow users to add items to the cart and check out.
+  - Users can add books to a cart and simulate purchasing them.
+  - No real transaction will occur, but the UI will allow users to add items to the cart and check out.
 
 ### Guide to Getting Started
+
 Follow the deployment guide to get your app live!
 
 1. **Follow the Guide**:
+
    - Detailed steps for each part of the project can be found in the [Guide to getting started with this project](/project-docs/GET_STARTED.md).
 
 1. **Submit**:
